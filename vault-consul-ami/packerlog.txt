@@ -1,0 +1,350 @@
+2019/06/25 15:13:51 [INFO] Packer version: 1.4.1
+2019/06/25 15:13:51 Packer Target OS/Arch: windows amd64
+2019/06/25 15:13:51 Built with Go Version: go1.12.5
+2019/06/25 15:13:51 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:51 Using internal plugin for alicloud-ecs
+2019/06/25 15:13:51 Using internal plugin for hcloud
+2019/06/25 15:13:51 Using internal plugin for null
+2019/06/25 15:13:51 Using internal plugin for oneandone
+2019/06/25 15:13:51 Using internal plugin for scaleway
+2019/06/25 15:13:51 Using internal plugin for amazon-ebs
+2019/06/25 15:13:51 Using internal plugin for amazon-instance
+2019/06/25 15:13:51 Using internal plugin for docker
+2019/06/25 15:13:51 Using internal plugin for hyperv-vmcx
+2019/06/25 15:13:51 Using internal plugin for lxd
+2019/06/25 15:13:51 Using internal plugin for yandex
+2019/06/25 15:13:51 Using internal plugin for azure-arm
+2019/06/25 15:13:51 Using internal plugin for profitbricks
+2019/06/25 15:13:51 Using internal plugin for triton
+2019/06/25 15:13:51 Using internal plugin for virtualbox-ovf
+2019/06/25 15:13:51 Using internal plugin for amazon-ebssurrogate
+2019/06/25 15:13:51 Using internal plugin for googlecompute
+2019/06/25 15:13:51 Using internal plugin for hyperone
+2019/06/25 15:13:51 Using internal plugin for openstack
+2019/06/25 15:13:51 Using internal plugin for amazon-ebsvolume
+2019/06/25 15:13:51 Using internal plugin for cloudstack
+2019/06/25 15:13:51 Using internal plugin for file
+2019/06/25 15:13:51 Using internal plugin for ncloud
+2019/06/25 15:13:51 Using internal plugin for virtualbox-iso
+2019/06/25 15:13:51 Using internal plugin for vagrant
+2019/06/25 15:13:51 Using internal plugin for vmware-iso
+2019/06/25 15:13:51 Using internal plugin for oracle-classic
+2019/06/25 15:13:51 Using internal plugin for oracle-oci
+2019/06/25 15:13:51 Using internal plugin for parallels-pvm
+2019/06/25 15:13:51 Using internal plugin for proxmox
+2019/06/25 15:13:51 Using internal plugin for tencentcloud-cvm
+2019/06/25 15:13:51 Using internal plugin for amazon-chroot
+2019/06/25 15:13:51 Using internal plugin for hyperv-iso
+2019/06/25 15:13:51 Using internal plugin for vmware-vmx
+2019/06/25 15:13:51 Using internal plugin for digitalocean
+2019/06/25 15:13:51 Using internal plugin for linode
+2019/06/25 15:13:51 Using internal plugin for lxc
+2019/06/25 15:13:51 Using internal plugin for parallels-iso
+2019/06/25 15:13:51 Using internal plugin for qemu
+2019/06/25 15:13:51 Using internal plugin for windows-shell
+2019/06/25 15:13:51 Using internal plugin for breakpoint
+2019/06/25 15:13:51 Using internal plugin for shell-local
+2019/06/25 15:13:51 Using internal plugin for windows-restart
+2019/06/25 15:13:51 Using internal plugin for file
+2019/06/25 15:13:51 Using internal plugin for salt-masterless
+2019/06/25 15:13:51 Using internal plugin for sleep
+2019/06/25 15:13:51 Using internal plugin for chef-client
+2019/06/25 15:13:51 Using internal plugin for chef-solo
+2019/06/25 15:13:51 Using internal plugin for converge
+2019/06/25 15:13:51 Using internal plugin for puppet-masterless
+2019/06/25 15:13:51 Using internal plugin for puppet-server
+2019/06/25 15:13:51 Using internal plugin for shell
+2019/06/25 15:13:51 Using internal plugin for ansible
+2019/06/25 15:13:51 Using internal plugin for ansible-local
+2019/06/25 15:13:51 Using internal plugin for powershell
+2019/06/25 15:13:51 Using internal plugin for inspec
+2019/06/25 15:13:51 Using internal plugin for alicloud-import
+2019/06/25 15:13:51 Using internal plugin for digitalocean-import
+2019/06/25 15:13:51 Using internal plugin for googlecompute-export
+2019/06/25 15:13:51 Using internal plugin for compress
+2019/06/25 15:13:51 Using internal plugin for docker-import
+2019/06/25 15:13:51 Using internal plugin for docker-push
+2019/06/25 15:13:51 Using internal plugin for docker-save
+2019/06/25 15:13:51 Using internal plugin for manifest
+2019/06/25 15:13:51 Using internal plugin for vsphere
+2019/06/25 15:13:51 Using internal plugin for amazon-import
+2019/06/25 15:13:51 Using internal plugin for artifice
+2019/06/25 15:13:51 Using internal plugin for checksum
+2019/06/25 15:13:51 Using internal plugin for docker-tag
+2019/06/25 15:13:51 Using internal plugin for googlecompute-import
+2019/06/25 15:13:51 Using internal plugin for vagrant
+2019/06/25 15:13:51 Using internal plugin for vagrant-cloud
+2019/06/25 15:13:51 Using internal plugin for shell-local
+2019/06/25 15:13:51 Using internal plugin for vsphere-template
+2019/06/25 15:13:51 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:51 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:51 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:51 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[alicloud-ecs:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-alicloud-ecs amazon-chroot:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-chroot amazon-ebs:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebs amazon-ebssurrogate:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebssurrogate amazon-ebsvolume:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-ebsvolume amazon-instance:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-amazon-instance azure-arm:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-azure-arm cloudstack:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-cloudstack digitalocean:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-digitalocean docker:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-docker file:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-file googlecompute:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-googlecompute hcloud:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hcloud hyperone:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperone hyperv-iso:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-iso hyperv-vmcx:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-hyperv-vmcx linode:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-linode lxc:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxc lxd:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-lxd ncloud:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-ncloud null:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-null oneandone:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oneandone openstack:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-openstack oracle-classic:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-classic oracle-oci:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-oracle-oci parallels-iso:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-iso parallels-pvm:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-parallels-pvm profitbricks:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-profitbricks proxmox:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-proxmox qemu:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-qemu scaleway:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-scaleway tencentcloud-cvm:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-tencentcloud-cvm triton:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-triton vagrant:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vagrant virtualbox-iso:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-iso virtualbox-ovf:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-virtualbox-ovf vmware-iso:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-iso vmware-vmx:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-vmware-vmx yandex:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-builder-yandex] PostProcessors:map[alicloud-import:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-alicloud-import amazon-import:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-amazon-import artifice:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-artifice checksum:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-checksum compress:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-compress digitalocean-import:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-digitalocean-import docker-import:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-import docker-push:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-push docker-save:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-save docker-tag:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-docker-tag googlecompute-export:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-export googlecompute-import:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-googlecompute-import manifest:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-manifest shell-local:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-shell-local vagrant:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant vagrant-cloud:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vagrant-cloud vsphere:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere vsphere-template:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-post-processor-vsphere-template] Provisioners:map[ansible:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible ansible-local:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-ansible-local breakpoint:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-breakpoint chef-client:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-client chef-solo:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-chef-solo converge:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-converge file:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-file inspec:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-inspec powershell:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-powershell puppet-masterless:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-masterless puppet-server:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-puppet-server salt-masterless:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-salt-masterless shell:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell shell-local:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-shell-local sleep:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-sleep windows-restart:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-restart windows-shell:C:\tools\packer.exe-PACKERSPACE-plugin-PACKERSPACE-packer-provisioner-windows-shell]}
+2019/06/25 15:13:51 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:51 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:51 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:13:51 Loading builder: amazon-ebs
+2019/06/25 15:13:51 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:13:51 Current exe path: C:\tools\packer.exe
+2019/06/25 15:13:51 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:13:51 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-builder-amazon-ebs"}
+2019/06/25 15:13:51 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 [INFO] Packer version: 1.4.1
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Packer Target OS/Arch: windows amd64
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Built with Go Version: go1.12.5
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 args: []string{"packer-builder-amazon-ebs"}
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Plugin minimum port: 10000
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Plugin maximum port: 25000
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Waiting for connection...
+2019/06/25 15:13:52 packer.exe: 2019/06/25 15:13:52 Serving a plugin connection...
+2019/06/25 15:13:52 Loading provisioner: shell
+2019/06/25 15:13:52 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:13:52 Current exe path: C:\tools\packer.exe
+2019/06/25 15:13:52 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:13:52 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-shell"}
+2019/06/25 15:13:52 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 [INFO] Packer version: 1.4.1
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Packer Target OS/Arch: windows amd64
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Built with Go Version: go1.12.5
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 args: []string{"packer-provisioner-shell"}
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Plugin minimum port: 10000
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Plugin maximum port: 25000
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Waiting for connection...
+2019/06/25 15:13:53 packer.exe: 2019/06/25 15:13:53 Serving a plugin connection...
+2019/06/25 15:13:53 Loading provisioner: file
+2019/06/25 15:13:53 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:13:53 Current exe path: C:\tools\packer.exe
+2019/06/25 15:13:53 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:13:53 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-file"}
+2019/06/25 15:13:53 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 [INFO] Packer version: 1.4.1
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Packer Target OS/Arch: windows amd64
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Built with Go Version: go1.12.5
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 args: []string{"packer-provisioner-file"}
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Plugin minimum port: 10000
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Plugin maximum port: 25000
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Waiting for connection...
+2019/06/25 15:13:54 packer.exe: 2019/06/25 15:13:54 Serving a plugin connection...
+2019/06/25 15:13:54 Loading provisioner: shell
+2019/06/25 15:13:54 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:13:54 Current exe path: C:\tools\packer.exe
+2019/06/25 15:13:54 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:13:54 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-shell"}
+2019/06/25 15:13:54 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 [INFO] Packer version: 1.4.1
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Packer Target OS/Arch: windows amd64
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Built with Go Version: go1.12.5
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 args: []string{"packer-provisioner-shell"}
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Plugin minimum port: 10000
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Plugin maximum port: 25000
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Waiting for connection...
+2019/06/25 15:13:55 packer.exe: 2019/06/25 15:13:55 Serving a plugin connection...
+2019/06/25 15:13:55 Loading provisioner: file
+2019/06/25 15:13:55 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:13:55 Current exe path: C:\tools\packer.exe
+2019/06/25 15:13:55 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:13:55 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-file"}
+2019/06/25 15:13:55 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 [INFO] Packer version: 1.4.1
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Packer Target OS/Arch: windows amd64
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Built with Go Version: go1.12.5
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 args: []string{"packer-provisioner-file"}
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Plugin minimum port: 10000
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Plugin maximum port: 25000
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Waiting for connection...
+2019/06/25 15:13:56 packer.exe: 2019/06/25 15:13:56 Serving a plugin connection...
+2019/06/25 15:13:56 Loading provisioner: file
+2019/06/25 15:13:56 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:13:56 Current exe path: C:\tools\packer.exe
+2019/06/25 15:13:56 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:13:56 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-file"}
+2019/06/25 15:13:56 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 [INFO] Packer version: 1.4.1
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Packer Target OS/Arch: windows amd64
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Built with Go Version: go1.12.5
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 args: []string{"packer-provisioner-file"}
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Plugin minimum port: 10000
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Plugin maximum port: 25000
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Waiting for connection...
+2019/06/25 15:13:57 packer.exe: 2019/06/25 15:13:57 Serving a plugin connection...
+2019/06/25 15:13:57 Loading provisioner: file
+2019/06/25 15:13:57 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:13:57 Current exe path: C:\tools\packer.exe
+2019/06/25 15:13:57 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:13:57 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-file"}
+2019/06/25 15:13:57 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 [INFO] Packer version: 1.4.1
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Packer Target OS/Arch: windows amd64
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Built with Go Version: go1.12.5
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 args: []string{"packer-provisioner-file"}
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Plugin minimum port: 10000
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Plugin maximum port: 25000
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Waiting for connection...
+2019/06/25 15:13:58 packer.exe: 2019/06/25 15:13:58 Serving a plugin connection...
+2019/06/25 15:13:58 Loading provisioner: file
+2019/06/25 15:13:58 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:13:58 Current exe path: C:\tools\packer.exe
+2019/06/25 15:13:58 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:13:58 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-file"}
+2019/06/25 15:13:58 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 [INFO] Packer version: 1.4.1
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Packer Target OS/Arch: windows amd64
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Built with Go Version: go1.12.5
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 args: []string{"packer-provisioner-file"}
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Plugin minimum port: 10000
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Plugin maximum port: 25000
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Waiting for connection...
+2019/06/25 15:13:59 packer.exe: 2019/06/25 15:13:59 Serving a plugin connection...
+2019/06/25 15:13:59 Loading provisioner: shell
+2019/06/25 15:13:59 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:13:59 Current exe path: C:\tools\packer.exe
+2019/06/25 15:13:59 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:13:59 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-shell"}
+2019/06/25 15:13:59 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 [INFO] Packer version: 1.4.1
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Packer Target OS/Arch: windows amd64
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Built with Go Version: go1.12.5
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 args: []string{"packer-provisioner-shell"}
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Plugin minimum port: 10000
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Plugin maximum port: 25000
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Waiting for connection...
+2019/06/25 15:14:00 packer.exe: 2019/06/25 15:14:00 Serving a plugin connection...
+2019/06/25 15:14:00 Loading provisioner: shell
+2019/06/25 15:14:00 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:14:00 Current exe path: C:\tools\packer.exe
+2019/06/25 15:14:00 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:14:00 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-shell"}
+2019/06/25 15:14:00 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 [INFO] Packer version: 1.4.1
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Packer Target OS/Arch: windows amd64
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Built with Go Version: go1.12.5
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 args: []string{"packer-provisioner-shell"}
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Plugin minimum port: 10000
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Plugin maximum port: 25000
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Waiting for connection...
+2019/06/25 15:14:01 packer.exe: 2019/06/25 15:14:01 Serving a plugin connection...
+2019/06/25 15:14:01 Loading provisioner: shell
+2019/06/25 15:14:01 Plugin could not be found. Checking same directory as executable.
+2019/06/25 15:14:01 Current exe path: C:\tools\packer.exe
+2019/06/25 15:14:01 Creating plugin client for path: C:\tools\packer.exe
+2019/06/25 15:14:01 Starting plugin: C:\tools\packer.exe []string{"C:\\tools\\packer.exe", "plugin", "packer-provisioner-shell"}
+2019/06/25 15:14:01 Waiting for RPC address for: C:\tools\packer.exe
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 [INFO] Packer version: 1.4.1
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Packer Target OS/Arch: windows amd64
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Built with Go Version: go1.12.5
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Attempting to open config file: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 [WARN] Config file doesn't exist: C:\Users\caycock\AppData\Roaming\packer.config
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Packer config: &{DisableCheckpoint:false DisableCheckpointSignature:false PluginMinPort:10000 PluginMaxPort:25000 Builders:map[] PostProcessors:map[] Provisioners:map[]}
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Detected home directory from env var: C:\Users\caycock\AppData\Roaming
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Setting cache directory: C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami\packer_cache
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 args: []string{"packer-provisioner-shell"}
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Plugin minimum port: 10000
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Plugin maximum port: 25000
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Plugin address: tcp 127.0.0.1:10000
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Waiting for connection...
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 Serving a plugin connection...
+2019/06/25 15:14:02 ui: amazon-linux-2-ami output will be in this color.
+2019/06/25 15:14:02 ui: 
+2019/06/25 15:14:02 Build debug mode: false
+2019/06/25 15:14:02 Force build: false
+2019/06/25 15:14:02 On error: 
+2019/06/25 15:14:02 Preparing build: amazon-linux-2-ami
+2019/06/25 15:14:02 packer.exe: 2019/06/25 15:14:02 [WARN]: the `clean_ami_name` template func is deprecated, please use clean_resource_name instead
+2019/06/25 15:14:02 ui error: 1 error(s) occurred:
+
+* Bad source 'C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami/auth/sign-request.py': CreateFile C:\Users\caycock\Documents\GitHub\HashiCorpDemo\vault-consul-ami/auth/sign-request.py: The system cannot find the path specified.
+2019/06/25 15:14:02 [INFO] (telemetry) Finalizing.
+2019/06/25 15:14:02 waiting for all plugin processes to complete...
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
+2019/06/25 15:14:02 C:\tools\packer.exe: plugin process exited
