@@ -7,8 +7,8 @@
   },
   "builders": [{
     "name": "amazon-linux-2-ami",
-    "ami_name": "consul-amazon-linux-2-{{isotime | clean_ami_name}}-{{uuid}}",
-    "ami_description": "An Amazon Linux 2 AMI that has Consul installed.",
+    "ami_name": "nomad-amazon-linux-2-{{isotime | clean_ami_name}}-{{uuid}}",
+    "ami_description": "An Amazon Linux 2 AMI that has Nomad installed.",
     "instance_type": "t2.micro",
     "region": "{{user `aws_region`}}",
     "type": "amazon-ebs",
@@ -30,7 +30,7 @@
     "inline": ["mkdir -p /tmp/terraform-aws-consul/modules"]
   },{
     "type": "file",
-    "source": "{{template_dir}}/../../modules/",
+    "source": "{{template_dir}}/../modules/",
     "destination": "/tmp/terraform-aws-consul/modules",
     "pause_before": "30s"
   },{
