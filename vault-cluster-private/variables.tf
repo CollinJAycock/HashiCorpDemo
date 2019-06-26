@@ -27,6 +27,11 @@ variable "ssh_key_name" {
 # These parameters have reasonable defaults.
 # ---------------------------------------------------------------------------------------------------------------------
 
+variable "nomad_cluster_name" {
+  description = "What to name the Nomad cluster and all of its associated resources"
+  default     = "nomad-example"
+}
+
 variable "vault_cluster_name" {
   description = "What to name the Vault server cluster and all of its associated resources"
   default     = "vault-example"
@@ -35,6 +40,11 @@ variable "vault_cluster_name" {
 variable "consul_cluster_name" {
   description = "What to name the Consul server cluster and all of its associated resources"
   default     = "consul-example"
+}
+
+variable "num_nomad_servers" {
+  description = "The number of Nomad server nodes to deploy. We strongly recommend using 3 or 5."
+  default     = 3
 }
 
 variable "vault_cluster_size" {
@@ -65,4 +75,23 @@ variable "consul_cluster_tag_key" {
 variable "vpc_id" {
   description = "The ID of the VPC to deploy into. Leave an empty string to use the Default VPC in this region."
   default     = ""
+}
+variable "cluster_tag_key" {
+  description = "The tag the Consul EC2 Instances will look for to automatically discover each other and form a cluster."
+  default     = "consul-servers"
+}
+
+variable "nomad_ami_id" {
+  description = "The ID of the AMI to run in the cluster. This should be an AMI built from the Packer template under examples/nomad-consul-ami/nomad-consul.json. If no AMI is specified, the template will 'just work' by using the example public AMIs. WARNING! Do not use the example AMIs in a production setting!"
+  default     = "ami-0ebadf4dff72cf22c"
+}
+
+variable "vault_ami_id" {
+  description = "The ID of the AMI to run in the cluster. This should be an AMI built from the Packer template under examples/vault-consul-ami/nomad-consul.json. If no AMI is specified, the template will 'just work' by using the example public AMIs. WARNING! Do not use the example AMIs in a production setting!"
+  default     = "ami-0ebadf4dff72cf22c"
+}
+
+variable "consul_ami_id" {
+  description = "The ID of the AMI to run in the cluster. This should be an AMI built from the Packer template under examples/vault-consul-ami/nomad-consul.json. If no AMI is specified, the template will 'just work' by using the example public AMIs. WARNING! Do not use the example AMIs in a production setting!"
+  default     = "ami-0ebadf4dff72cf22c"
 }
