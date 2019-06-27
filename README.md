@@ -41,7 +41,7 @@ This solution stands up nine servers (6 of consul/vault and 3 of nomad) inside a
 
 ### Quick Start
 
-The [HashiStack Quick Start Guide](./quick-start) provisions a 9 node HashiStack cluster. The 6 Consul & Vault agents are running 3 server and 3 agent nodes, while Nomad is running 3 nodes in both Client & Server mode. 
+The [HashiStack-HA AWS 2019](./HashStack-HA-2019) provisions a 9 node HashiStack cluster. The 6 Consul & Vault agents are running 3 server and 3 agent nodes, while Nomad is running 3 nodes in both Client & Server mode. 
 
 
 ## Steps
@@ -56,34 +56,49 @@ We will now provision the HashiStack cluster.
 - Convert .pem file to "putty_key.ppk" via puttyGen (See first answer on https://stackoverflow.com/questions/3190667/convert-pem-to-ppk-file-format)
 - Place .ppk file in your root folder next to this readme
 
-### Step 2: Build your AMIs
+### Step 2: Build your AMIs - In the following section we will use Packer to build the AMIs we will need to provision our infrastructure.
+
 #Note: I used power shell to run all the commands from here on
-- 'cd' into the "vault-consul-ami"
-- run 'packer build ./vault-consul.json'
-- take note of the ami-id
-
-- 'cd' into the "nomad-ami"
-- run 'packer build ./nomad.json'
-- take note of the ami-id
-
-### Step 3: Provision infrastructor in AWS
-- 'cd' into HashStack-HA-2019
-- open variables.tf in your editor of choice
-- set "vault_ami_id" and "consul_ami_id" to the first ami-id you created above
-- set "nomad_ami_id" to the second ami-id from above
-- set "ssh_key_name" to the name you of your .pem file from above (no extension please)
-
-- run "Terraform init"
-- run "Terraform plan" => if you have any errors here please post to the repo
-- run "Terraform Apply" select a region and say "yes"
-
-### IT'S ALIVE!!!
-
-### Step 4: Connect to servers 
 
 
+1. 'cd' into the "vault-consul-ami"
+2. run 'packer build ./vault-consul.json'
+3. take note of the ami-id
 
 
+4. 'cd' into the "nomad-ami"
+5. run 'packer build ./nomad.json'
+6. take note of the ami-id
+
+
+### Step 3: Provision infrastructor in AWS - Now we get to have some fun and actually create our system!
+
+
+1. 'cd' into HashStack-HA-2019
+2. open variables.tf in your editor of choice
+3. set "vault_ami_id" and "consul_ami_id" to the first ami-id you created above
+4. set "nomad_ami_id" to the second ami-id from above
+5. set "ssh_key_name" to the name you of your .pem file from above (no extension please)
+
+
+6. run "Terraform init"
+7. run "Terraform plan" select a region => if you have any errors here please post to the repo and I will try to help resolve them
+8. run "Terraform Apply" select a region and say "yes"
+
+## IT'S ALIVE!!!
+
+
+### Step 4: Connect to servers - All that is left is to say Hi
+
+
+ 1. Go to your AWS console and pick an EC2 instance for vault
+ 2. Copy the Publice DNS name
+ 3. Open Putty and paste "ec2-user@"'Your DNA Name' into the host name
+ 4. On the left select Connection -> SSH -> Auth and browse for you .ppk file
+ 5. click "open"
+ 6. In the promopt that appears run "vault version" and make sure you get a version number back.
+
+repeat the above process with Nomad and Consul
 
 ## Next Steps
 
