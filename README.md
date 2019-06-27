@@ -55,8 +55,10 @@ We will now provision the HashiStack cluster.
 4. Create EC2 key pair and save .pem file next to this readme (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
 5. Convert .pem file to "putty_key.ppk" via puttyGen (See first answer on https://stackoverflow.com/questions/3190667/convert-pem-to-ppk-file-format)
 6. Place .ppk file in your root folder next to this readme
+7. Go to (https://www.terraform.io/downloads.html) download terraform and place the binary in your system path
+8. Go to (https://www.packer.io/downloads.html) download packer and place the binary in your system path
 
-### Step 2: Build your AMIs - Gotta to make the blocks before you use them
+### Step 2: Build your AMIs - Got to make the blocks before you use them
 
 #### Note: I used power shell to run all the commands from here on
 
