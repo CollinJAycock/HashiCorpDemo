@@ -12,14 +12,9 @@
 # You must provide a value for each of these parameters.
 # ---------------------------------------------------------------------------------------------------------------------
 
-variable "ami_id" {
-  description = "The ID of the AMI to run in the cluster. This should be an AMI built from the Packer template under examples/vault-consul-ami/vault-consul.json."
-  default = "ami-0984b14d468d085be"
-}
-
 variable "ssh_key_name" {
   description = "The name of an EC2 Key Pair that can be used to SSH to the EC2 Instances in this cluster. Set to an empty string to not associate a Key Pair."
-  default = "HashiDemo"
+  default = "HashiDemo2"
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -88,10 +83,10 @@ variable "nomad_ami_id" {
 
 variable "vault_ami_id" {
   description = "The ID of the AMI to run in the cluster. This should be an AMI built from the Packer template under examples/vault-consul-ami/nomad-consul.json. If no AMI is specified, the template will 'just work' by using the example public AMIs. WARNING! Do not use the example AMIs in a production setting!"
-  default     = "ami-0ebadf4dff72cf22c"
+  default     = "ami-0984b14d468d085be"
 }
 
 variable "consul_ami_id" {
   description = "The ID of the AMI to run in the cluster. This should be an AMI built from the Packer template under examples/vault-consul-ami/nomad-consul.json. If no AMI is specified, the template will 'just work' by using the example public AMIs. WARNING! Do not use the example AMIs in a production setting!"
-  default     = "ami-0ebadf4dff72cf22c"
+  default     = "ami-0984b14d468d085be"
 }
