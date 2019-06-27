@@ -36,7 +36,7 @@ For educational purposes, standing up highly avaliable, instances of Consul, Nom
 
 This solution stands up nine servers (6 of consul/vault and 3 of nomad) inside an AWS VPC with other supporting infrastructure.
 
-**Disclaimer**: No matter which guide you follow, the HashiStack is _not_ considered best practices. Each product (Consul/Vault/Nomad) should be provisioned and managed separately. The "HashiStack" is merely a convenient way to provision a cluster that has all the HashiCorp tools you need.
+**Disclaimer**:  The "HashiStack HA" is merely a convenient way to provision a cluster that has all the HashiCorp tools you need. You really shouldn't use it in Production
 
 
 ### Quick Start
