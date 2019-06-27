@@ -44,21 +44,21 @@ This solution stands up nine servers (6 of consul/vault and 3 of nomad) inside a
 The [HashiStack-HA AWS 2019](./HashStack-HA-2019) provisions a 9 node HashiStack cluster. The 6 Consul & Vault agents are running 3 server and 3 agent nodes, while Nomad is running 3 nodes in both Client & Server mode. 
 
 
-## Steps
+## Process
 
 We will now provision the HashiStack cluster.
 
 ### Step 1: Setup your environment
-- Install PuTTY and PuTTYGen (https://www.puttygen.com/download-putty#PuTTY_for_windows)
-- Make sure you have an AWS Account
-- Set your AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY (See Environmental Variables in (https://www.terraform.io/docs/providers/aws/index.html)
-- Create EC2 key pair and save .pem file next to this readme (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
-- Convert .pem file to "putty_key.ppk" via puttyGen (See first answer on https://stackoverflow.com/questions/3190667/convert-pem-to-ppk-file-format)
-- Place .ppk file in your root folder next to this readme
+1. Install PuTTY and PuTTYGen (https://www.puttygen.com/download-putty#PuTTY_for_windows)
+2. Make sure you have an AWS Account
+3. Set your AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY (See Environmental Variables in (https://www.terraform.io/docs/providers/aws/index.html)
+4. Create EC2 key pair and save .pem file next to this readme (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
+5. Convert .pem file to "putty_key.ppk" via puttyGen (See first answer on https://stackoverflow.com/questions/3190667/convert-pem-to-ppk-file-format)
+6. Place .ppk file in your root folder next to this readme
 
-### Step 2: Build your AMIs - In the following section we will use Packer to build the AMIs we will need to provision our infrastructure.
+### Step 2: Build your AMIs - Gotta to make the blocks before you use them
 
-#Note: I used power shell to run all the commands from here on
+#### Note: I used power shell to run all the commands from here on
 
 
 1. 'cd' into the "vault-consul-ami"
