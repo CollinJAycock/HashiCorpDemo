@@ -64,8 +64,6 @@ We will now provision the HashiStack cluster.
 1. 'cd' into the "vault-consul-ami"
 2. run 'packer build ./vault-consul.json'
 3. take note of the ami-id
-
-
 4. 'cd' into the "nomad-ami"
 5. run 'packer build ./nomad.json'
 6. take note of the ami-id
@@ -79,8 +77,6 @@ We will now provision the HashiStack cluster.
 3. set "vault_ami_id" and "consul_ami_id" to the first ami-id you created above
 4. set "nomad_ami_id" to the second ami-id from above
 5. set "ssh_key_name" to the name you of your .pem file from above (no extension please)
-
-
 6. run "Terraform init"
 7. run "Terraform plan" select a region => if you have any errors here please post to the repo and I will try to help resolve them
 8. run "Terraform Apply" select a region and say "yes"
