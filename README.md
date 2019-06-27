@@ -49,29 +49,41 @@ The [HashiStack Quick Start Guide](./quick-start) provisions a 9 node HashiStack
 We will now provision the HashiStack cluster.
 
 ### Step 1: Setup your environment
+- Install PuTTY and PuTTYGen (https://www.puttygen.com/download-putty#PuTTY_for_windows)
 - Make sure you have an AWS Account
 - Set your AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY (See Environmental Variables in (https://www.terraform.io/docs/providers/aws/index.html)
+- Create EC2 key pair and save .pem file next to this readme (https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html)
+- Convert .pem file to "putty_key.ppk" via puttyGen (See first answer on https://stackoverflow.com/questions/3190667/convert-pem-to-ppk-file-format)
+- Place .ppk file in your root folder next to this readme
 
 ### Step 2: Build your AMIs
--'cd' into the "vault-consul-ami"
-- run 'packer build '
+#Note: I used power shell to run all the commands from here on
+- 'cd' into the "vault-consul-ami"
+- run 'packer build ./vault-consul.json'
+- take note of the ami-id
+
+- 'cd' into the "nomad-ami"
+- run 'packer build ./nomad.json'
+- take note of the ami-id
 
 ### Step 3: Provision infrastructor in AWS
+- 'cd' into HashStack-HA-2019
+- open variables.tf in your editor of choice
+- set "vault_ami_id" and "consul_ami_id" to the first ami-id you created above
+- set "nomad_ami_id" to the second ami-id from above
+- set "ssh_key_name" to the name you of your .pem file from above (no extension please)
+
+- run "Terraform init"
+- run "Terraform plan" => if you have any errors here please post to the repo
+- run "Terraform Apply" select a region and say "yes"
+
+### IT'S ALIVE!!!
 
 ### Step 4: Connect to servers 
 
 
-### IT'S ALIVE!!!
 
 
-#### CLI
-
-```sh
-$ cd infrastructure-as-code/hashistack/dev/vagrant-local
-$ cd infrastructure-as-code/hashistack/dev/terraform-aws
-$ cd infrastructure-as-code/hashistack/quick-start/terraform-aws
-$ cd infrastructure-as-code/hashistack/best-practices/terraform-aws
-```
 
 ## Next Steps
 
